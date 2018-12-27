@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.bundle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header-game">
+        <div class="player-header-container">
+            <div class="player-name">Denis</div>
+            <div class="player-helth-line">
+                <div class="player-helth-level"></div>
+            </div>
+        </div>
+        <span class="vs-container">VS</span>
+        <div class="enemy-header-container">
+            <div class="enemy-name">Monster</div>
+            <div class="enemy-helth-line">
+                <div class="enemy-helth-level"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="score-section">
+        <span class="score-text">Score: </span>
+        <span class="score-number">0</span>
+    </section>
+
+    <section class="attack-button">
+        <button id="attack" type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#mainModal">
+            <i class="fas fa-bomb"></i>
+        </button>
+    </section>
+    
+    <section class="help-buttons">
+        <button id="volume-help-button" type="button" class="btn btn-light">
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-volume-off hide-volume-icon"></i>
+        </button>
+        <button id="home-help-button" type="button" class="btn btn-light">
+            <i class="fas fa-home"></i>
+            </button>
+    </section>
+
+    <div class="play-zone">
+    </div>
+
+  <!-- Main Modal -->
+  <div class="modal fade" id="mainModal" tabindex="-1" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel debitis consectetur recusandae accusamus aliquam laudantium cum possimus architecto harum nisi, ut minus ab neque, odio praesentium corporis explicabo dolorem at.
+        </div>
+        <div class="modal-footer">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="answer-input" placeholder="Enter the answer">
+                <div class="input-group-append">
+                    <span class="input-group-text btn btn-dark" id="answer">SUMBIT</span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <script src="js/bundle.js"></script>
+</body>
+</html>
