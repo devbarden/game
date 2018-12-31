@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Game</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.bundle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
     <div class="header-game">
         <div class="player-header-container">
-            <div class="player-name">Denis</div>
+            <div class="player-name">Username</div>
             <div class="player-helth-line">
                 <div class="player-helth-level"></div>
             </div>
         </div>
         <span class="vs-container">VS</span>
         <div class="enemy-header-container">
-            <div class="enemy-name">Monster</div>
+            <div class="enemy-name">Enemy</div>
             <div class="enemy-helth-line">
                 <div class="enemy-helth-level"></div>
             </div>
@@ -53,26 +54,65 @@
   <div class="modal fade" id="mainModal" tabindex="-1" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
+          <h5 class="modal-title">Choose attack:</h5>
         </div>
+
         <div class="modal-body">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel debitis consectetur recusandae accusamus aliquam laudantium cum possimus architecto harum nisi, ut minus ab neque, odio praesentium corporis explicabo dolorem at.
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Math</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Translate</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Drag&Drop</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Audition</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Balloon</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Capitalts</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Grammar</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Excess</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">More&Less</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Puzzle</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Аntonym</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Compare</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Definition</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Sequence</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Random</button>
         </div>
-        <div class="modal-footer">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" id="answer-input" placeholder="Enter the answer">
-                <div class="input-group-append">
-                    <span class="input-group-text btn btn-dark" id="answer">SUMBIT</span>
-                </div>
-            </div>
-        </div>
+        
       </div>
     </div>
   </div>
+
+  <!-- Modal Task -->
+      <div class="modal fade" id="modalTask" tabindex="-1" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title">Math</h5>
+            </div>
+
+            <div class="modal-body">
+                <div class="question-area">
+                    <h4>How many will be 5 + 3 ?</h4>
+                </div>
+
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Answer:</span>
+                    </div>   
+                    <input id="answerInput" type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button id="submitSolution" type="button" class="btn btn-dark">SUBMIT</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
 
   
     <script src="js/bundle.js"></script>
