@@ -75,11 +75,11 @@
     </section>
     
     <section class="help-buttons" style="display: none">
-        <button id="info-help-button" type="button" class="btn btn-light" onClick="window.location.href=window.location.href">
-            <i class="fas fa-info"></i>
-        </button>
-        <button id="home-help-button" type="button" class="btn btn-light">
+        <button id="home-help-button" type="button" class="btn btn-light" onClick="window.location.href='https://devbarden.github.io/counter-strike/'">
             <i class="fas fa-home"></i>
+        </button>
+        <button id="restart-help-button" type="button" class="btn btn-light" onClick="window.location.href=window.location.href">
+            <i class="fa fa-undo"></i>
         </button>
     </section>
 
@@ -96,21 +96,21 @@
         </div>
 
         <div class="modal-body">
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Math</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Translate</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">DragDrop</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Audition</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Balloon</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Capitalts</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Grammar</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Excess</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">MoreLess</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Puzzle</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Аntonym</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Compare</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Definition</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Sequence</button>
-            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask">Random</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="math-btn">Math</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="translate-btn">Translate</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="dragdrop-btn">DragDrop</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="audition-btn">Audition</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="ballon-btn">Balloon</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="capitals-btn">Capitalts</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="grammar-btn">Grammar</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="excess-btn">Excess</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="moreless-btn">MoreLess</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="puzzle-btn">Puzzle</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="antonym-btn">Аntonym</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="compare-btn">Compare</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="definition-btn">Definition</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="sequence-btn">Sequence</button>
+            <button type="button" class="btn-task btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#modalTask" id="random-btn">Random</button>
         </div>
         
       </div>
@@ -148,6 +148,12 @@
       </div>
  
     <div class="bg-game" style="display: none"></div>
+
+    <div class="records-section" style="display: none"></div>
+
+    <div class="new-game-btn-container" style="display: none">
+        <button id="newGame" type="button" class="btn btn-danger">New Game</button>
+    </div>
   
     <script src="js/bundle.js"></script> 
 </body>
